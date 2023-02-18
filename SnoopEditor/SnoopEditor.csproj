@@ -26,7 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-     <ProjectReference Include="../Snoop.Core/Snoop.Core.csproj" /> 
+     <ProjectReference Include="../Snoop.Core/Snoop.Core.csproj" />
+     <ProjectReference Include="..\SnoopEditor.Core\SnoopEditor.Core.csproj" /> 
   </ItemGroup>
 
   <ItemGroup>
