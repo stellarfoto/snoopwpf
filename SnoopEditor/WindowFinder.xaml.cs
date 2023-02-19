@@ -182,7 +182,7 @@ public partial class WindowFinder
         if (result?.Success == false)
         {
             ErrorDialog.ShowDialog(result.AttachException, "Can't Snoop the process", $"Failed to attach to '{windowInfo.Description}'.", true);
-        }
+        } 
     }
 
     private static void AttachMagnify(WindowInfo windowInfo)

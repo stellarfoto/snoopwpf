@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
 		<TargetFrameworks>net5.0-windows;netcoreapp3.1;$(MinTargetFramework)</TargetFrameworks>
 
@@ -30,6 +30,12 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Snoop.Core\Snoop.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Page Update="SnoopEditorUI.xaml">
+	    <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+	  </Page>
 	</ItemGroup>
 
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net5.0-windows'">

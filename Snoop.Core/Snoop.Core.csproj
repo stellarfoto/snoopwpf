@@ -28,6 +28,10 @@
     <PackageReference Include="System.Management.Automation" PrivateAssets="All" Condition="'$(TargetFramework)' == 'net5.0-windows'" />
   </ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include="SnoopEditor.Core" />
+	</ItemGroup>
+	
   <PropertyGroup Condition="'$(TargetFramework)' == 'net5.0-windows'">
     <DefineConstants>$(DefineConstants);USE_WPF_BINDING_DIAG</DefineConstants>
   </PropertyGroup>
