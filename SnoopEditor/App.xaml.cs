@@ -28,7 +28,7 @@ public partial class App
 
     private void SnoopSelf()
     {
-        var ui = new SnoopUI().Inspect(this.MainWindow);
+        var ui = new SnoopEditorUI().Inspect(this.MainWindow);
         ui.Show();
     }
 
